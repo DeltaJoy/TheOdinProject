@@ -55,14 +55,14 @@ function singleRoundGame (playerSelection, computerSelection) {
     }
 }
 
-console.log(singleRoundGame(playerSelection, computerPlay()));
-console.log(singleRoundGame(playerSelection, computerPlay()));
-console.log(singleRoundGame(playerSelection, computerPlay()));
-console.log(singleRoundGame(playerSelection, computerPlay()));
-console.log(singleRoundGame(playerSelection, computerPlay()));
 
 
 
 function game () {
-    
+    console.log(singleRoundGame(playerSelection, computerPlay()));
+    console.log(singleRoundGame(playerSelection, computerPlay()));
+    console.log(singleRoundGame(playerSelection, computerPlay()));
+    console.log(singleRoundGame(playerSelection, computerPlay()));
+    console.log(singleRoundGame(playerSelection, computerPlay()));
+
 }

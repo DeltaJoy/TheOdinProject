@@ -1,8 +1,18 @@
 
 
+// ----------------------------------GLOBAL SCOPE---------------------------------
+
+let userChoice = prompt("make your selection...");
+let playerSelection = userChoice.toLowerCase();
+
+//--------------------------------------------------------------------------------
 
 
 
+
+
+
+//-----------------------------COMPUTER MOVE FUNCTION-----------------------------
 
 
 function computerPlay () {
@@ -11,9 +21,15 @@ function computerPlay () {
     return compRandomMove;
 }
 
-let userChoice = prompt("make your selection...");
-let playerSelection = userChoice.toLowerCase();
+//--------------------------------------------------------------------------------
 
+
+
+
+
+
+
+//--------------------------SINGLE ROUND FUNCTION------------------------------------
 
 
 function singleRoundGame (playerSelection, computerSelection) {
@@ -55,14 +71,14 @@ function singleRoundGame (playerSelection, computerSelection) {
     }
 }
 
+//--------------------------------------------------------------------------------
 
 
 
-function game () {
-    console.log(singleRoundGame(playerSelection, computerPlay()));
-    console.log(singleRoundGame(playerSelection, computerPlay()));
-    console.log(singleRoundGame(playerSelection, computerPlay()));
-    console.log(singleRoundGame(playerSelection, computerPlay()));
-    console.log(singleRoundGame(playerSelection, computerPlay()));
 
-}
+
+//--------------------------------GAME FUNCTION-------------------------------
+
+function game(singleRoundGame) {
+
+    

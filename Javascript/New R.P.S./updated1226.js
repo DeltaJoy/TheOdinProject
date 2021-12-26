@@ -119,7 +119,7 @@ function playRound() {
 
     let userScore = 0
     let compScore = 0
-    // let winnerScore = 5
+    let winnerScore = 2
 
     // function scoreCard () {
 
@@ -135,15 +135,17 @@ function playRound() {
     function game() {
 
         // for(let score = 0; score = 5; score++) 
-        while(userScore<5 || compScore<5) {
+        while(userScore<2 || compScore <2) {
             console.log(playRound());
         }
         
-        if (userScore === 5) {
+        if (userScore === winnerScore) {
             console.log("USER WINS");
-        } else if (compScore === 5) {
+        } else if (compScore === winnerScore) {
             console.log("COMPUTER WINS");
         }
+
+
     }
 
 

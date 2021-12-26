@@ -19,6 +19,8 @@ function computerPlay () {
     let move = ["rock", "paper", "scissors"];
     let compRandomMove = move[Math.floor(Math.random()*move.length)];
     return compRandomMove;
+
+
 }
 
 //--------------------------------------------------------------------------------
@@ -35,24 +37,24 @@ function computerPlay () {
 function singleRoundGame (playerSelection, computerSelection) {
 
 
-    let computerSelectionMove = computerPlay(computerSelection);
+    computerSelection = computerPlay();
 
-    if (playerSelection === "rock" && computerSelectionMove === "scissors") {
+    if (playerSelection === "rock" && computerSelection === "scissors") {
         return "Winner!";
-    } else if (playerSelection === "rock" && computerSelectionMove === "paper") {
+    } else if (playerSelection === "rock" && computerSelection === "paper") {
         return "Loser!";
-    } else if (playerSelection === "rock" && computerSelectionMove === "rock"){
+    } else if (playerSelection === "rock" && computerSelection === "rock"){
         return "Draw!";
     } else {
         "Let's have another go shall we...?";
     }
 
 
-    if (playerSelection === "paper" && computerSelectionMove === "scissors") {
+    if (playerSelection === "paper" && computerSelection === "scissors") {
         return "Loser!";
-    } else if (playerSelection === "paper" && computerSelectionMove === "paper") {
+    } else if (playerSelection === "paper" && computerSelection === "paper") {
         return "Draw!";
-    } else if (playerSelection === "paper" && computerSelectionMove === "rock"){
+    } else if (playerSelection === "paper" && computerSelection === "rock"){
         return "Winner!";
     } else {
         "Let's have another go shall we...?";
@@ -60,11 +62,11 @@ function singleRoundGame (playerSelection, computerSelection) {
 
 
 
-    if (playerSelection === "scissors" && computerSelectionMove === "scissors") {
+    if (playerSelection === "scissors" && computerSelection === "scissors") {
         return "Winner!";
-    } else if (playerSelection === "scissors" && computerSelectionMove === "paper") {
+    } else if (playerSelection === "scissors" && computerSelection === "paper") {
         return "Loser!";
-    } else if (playerSelection === "scissors" && computerSelectionMove === "rock"){
+    } else if (playerSelection === "scissors" && computerSelection === "rock"){
         return "Draw!";
     } else {
         "Let's have another go shall we...?";
@@ -79,6 +81,3 @@ function singleRoundGame (playerSelection, computerSelection) {
 
 //--------------------------------GAME FUNCTION-------------------------------
 
-function game(singleRoundGame) {
-
-    

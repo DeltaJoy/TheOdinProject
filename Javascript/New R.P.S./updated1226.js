@@ -119,7 +119,7 @@ function playRound() {
 
     let userScore = 0
     let compScore = 0
-    let winnerScore = 2
+    let winnerScore = 5
   
 
     // function scoreCard () {
@@ -146,13 +146,9 @@ function playRound() {
         } else {
         console.log("COMPUTER WINS");
         }
-        
 
     }
 
-
-
-        // if (playRound === "DRAW") 
 
 
     

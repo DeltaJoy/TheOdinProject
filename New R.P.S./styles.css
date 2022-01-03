@@ -1,0 +1,81 @@
+
+body {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+
+}
+
+.header {
+
+
+    background-color: red;
+    border: solid, black, 10px;
+    height: 90px;
+    display: flex;
+    font-size: xx-large;
+    border-radius: 0.5rem;
+    align-items: center; 
+    text-align: center;   
+    justify-content: center;
+
+}
+
+.title {
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0.25rem;
+  
+
+}
+
+.choices {
+
+    background-color: Pink;
+    border: solid, black, 10px;
+    margin-top: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 0.75rem;
+
+
+    
+}
+
+
+.rock {
+    background-color: blue;
+    border: solid, pink, 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paper {
+    background-color: blue;
+    border: solid, pink, 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.scissors {
+    background-color: blue;
+    border: solid, pink, 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    width: 100px;
+    height: 200px;
+    border-radius: 1rem;
+}

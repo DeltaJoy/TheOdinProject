@@ -79,10 +79,68 @@ function playersMove () {
     
 
 
+// -------------------------------------------------------------
+// ---------------------------1-4-21------------------------------
+
+
+
+// document.querySelectorAll("button").forEach((button) => {
+//     button.addEventListener("click", () => {
+//     console.log(button.id);
+//     } );
+// });
+
+
+
+
+
+// const btnRock = document.querySelector("#rock");
+//     btnRock.addEventListener("click", )
+
+
+// const btnPaper = document.querySelector("#paper");
+//     btnPaper.addEventListener("click", () =>{
+//         console.log("paper");
+// })
+
+
+// const btnScissors = document.querySelector("#scissors");
+//     btnScissors.addEventListener("click", () =>{
+//     console.log("scissors");
+//     })
+
+
+// -------------------------------------------------------------
+// ---------------------------1-7-21------------------------------
+
+const choices1 = document.querySelector(".choice1");
+
+choices1.addEventListener("click", playRound);
+
+const hello = document.querySelector(".choice2");
+
+hello.addEventListener("click", () => {
+    console.log("paper");
+});
+
+const choices3 = document.querySelector(".choice3");
+
+choices3.addEventListener("click", () => {
+    console.log("scissors");
+});
+
+
+
+
+
+
+
 
 function playRound() {
     
-    playerSelection = playersMove();
+    // playerSelection = playersMove();
+
+  
 
     computerSelection = computerPlay();
     
@@ -148,11 +206,6 @@ function playRound() {
         }
 
     }
-
-
-
-    
-
 
 
 

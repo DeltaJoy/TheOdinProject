@@ -1,4 +1,21 @@
-img {
-    height: 200px;
+button {
+    height: 100px; 
     width: 100px;
+}
+
+
+h2 h3 {
+    display: flex;
+    text-align: center;
+}
+.choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.restart {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }

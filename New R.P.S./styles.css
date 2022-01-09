@@ -1,6 +1,6 @@
-button {
-    height: 100px; 
+img {
     width: 100px;
+    height: 200px;
 }
 
 
@@ -9,9 +9,10 @@ h2 h3 {
     text-align: center;
 }
 .choice {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    
 }
 
 .restart {

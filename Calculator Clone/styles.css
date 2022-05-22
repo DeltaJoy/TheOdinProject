@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: white;
+    font-size: 32px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: solid 1px black;
+    width: 60%;
+    height: 80vh;
+    gap: 5px;
+    grid-template-areas: 
+        "answer answer answer answer"
+        "clear negative percent divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero zero decimal equal"
+    ;
+}
+
+.red {
+    background-color: orange;
+}
+
+.answer {
+    grid-area: answer;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+}
+.one {
+    grid-area: one;
+
+}
+.two {
+    grid-area: two;
+
+}
+.three {
+    grid-area: three;
+
+}
+.four {
+    grid-area: four;
+
+}
+.five {
+    grid-area: five;
+
+}
+.six {
+    grid-area: six;
+
+}
+.seven {
+    grid-area: seven;
+
+}
+.eight {
+    grid-area: eight;
+
+}
+.nine {
+    grid-area: nine;
+
+}
+.zero {
+    grid-area: zero;
+
+}
+
+.divide {
+    grid-area: divide;
+
+}
+.multiply {
+    grid-area: multiply;
+
+}
+
+.subtract {
+    grid-area: subtract;
+
+}
+
+.add {
+    grid-area: add;
+
+}
+
+.equal {
+    grid-area: equal;
+
+}
+
+.percent {
+    grid-area: percent;
+
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.negative {
+    grid-area: negative;
+}
+
+.decimal {
+    grid-area: decimal;
+}

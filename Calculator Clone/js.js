@@ -115,10 +115,15 @@ integers.forEach(number => {
                     console.log(a / b)
                 }
             }
-        }
-        
+            
+            document.getElementById("answerSection").innerText = null
 
+
+
+        }
     })
+
+    
 
 })
 

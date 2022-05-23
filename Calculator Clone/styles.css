@@ -1,18 +1,28 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     color: white;
     font-size: 32px;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
 .container {
     display: grid;
+    background-color: black;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    border: solid 1px black;
-    width: 60%;
+    /* width: 60%; */
+    width: 400px;
     height: 80vh;
-    gap: 5px;
+    gap: 10px;
+    padding: 15px;
     grid-template-areas: 
         "answer answer answer answer"
         "clear negative percent divide"
@@ -23,99 +33,130 @@
     ;
 }
 
-.red {
+/* .red {
     background-color: orange;
-}
+} */
 
-.answer {
+#answerSection {
     grid-area: answer;
+    background-color: black;
+    color: white;
+    font-size: 52px;
+    border-radius: 0em;
+
+    
 }
 
 .num {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     width: 100%;
+    border-radius: 3em;
+   border: none;
 }
+
+
+
 .one {
     grid-area: one;
-
+    background-color: dimgrey;
 }
 .two {
     grid-area: two;
+    background-color: dimgrey;
 
 }
 .three {
     grid-area: three;
+    background-color: dimgrey;
 
 }
 .four {
     grid-area: four;
+    background-color: dimgrey;
 
 }
 .five {
     grid-area: five;
+    background-color: dimgrey;
 
 }
 .six {
     grid-area: six;
+    background-color: dimgrey;
 
 }
 .seven {
     grid-area: seven;
+    background-color: dimgrey;
 
 }
 .eight {
     grid-area: eight;
+    background-color: dimgrey;
 
 }
 .nine {
     grid-area: nine;
+    background-color: dimgrey;
 
 }
 .zero {
     grid-area: zero;
+    background-color: dimgrey;
 
 }
 
 .divide {
     grid-area: divide;
+    background-color: rgb(237, 143, 28);
 
 }
 .multiply {
     grid-area: multiply;
+    background-color: rgb(237, 143, 28);
 
 }
 
 .subtract {
     grid-area: subtract;
+    background-color: rgb(237, 143, 28);
 
 }
 
 .add {
     grid-area: add;
+    background-color: rgb(237, 143, 28);
 
 }
 
 .equal {
     grid-area: equal;
+    background-color: rgb(237, 143, 28);
 
 }
 
 .percent {
     grid-area: percent;
+    background-color: lightgray;
+    color: black;
 
 }
 
 .clear {
     grid-area: clear;
+    background-color: lightgray;
+    color: black;
 }
 
 .negative {
     grid-area: negative;
+    background-color: lightgray;
+    color: black;
 }
 
 .decimal {
     grid-area: decimal;
+    background-color: dimgrey;
 }

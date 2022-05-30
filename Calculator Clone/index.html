@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <script src="js.js" defer></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="reworkJS.js" defer type="text/babel"></script>
     <title>Document</title>
 </head>
 <body>
@@ -18,9 +21,9 @@
 
 
 
-        <button id = "one" class="one num int calcNums ">1</button>
-        <button id = "two" class="two num int calcNums">2</button>
-        <button id = "three" class="three num int calcNums">3</button>
+        <button value = "1" id = "one" class="one num int calcNums ">1</button>
+        <button value = "2" id = "two" class="two num int calcNums">2</button>
+        <button value = "3" id = "three" class="three num int calcNums">3</button>
         <button id = "four" class="four num int calcNums">4</button>
         <button id = "five" class="five num int calcNums">5</button>
         <button id = "six" class="six num int calcNums">6</button>
